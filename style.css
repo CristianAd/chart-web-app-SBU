@@ -1,0 +1,215 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+body{
+    margin: 0;
+}
+.grid-container{
+    width: calc(100 - 5rem);
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 8fr 2fr;
+    grid-gap: 8rem;
+}
+/*Menu set up */
+header{
+   grid-area: header;
+   position: fixed;
+  
+
+}
+main{
+    grid-area: main;
+
+    
+}
+nav {
+    grid-area: nav;
+background-color: cadetblue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #052D3F;
+    color: white; 
+}
+
+footer div{
+ margin: 1rem 3rem;
+     
+}
+
+/*header style*/
+header{
+    
+    width: 100%;
+    height: 5rem;
+    
+}
+nav{
+    background-color: #052D3F;
+    width: 100%;
+    height: 80px;
+}
+
+.fa-sharp.fa-solid.fa-star {
+    font-size: 2em;  
+     color: white;
+  }
+.fa-sharp.fa-solid.fa-compact-disc{
+    font-size: 2em;
+    color: rgb(204, 204, 204);
+
+}
+.fa-brands.fa-wpbeginner {
+    font-size: 2em;
+    color: #acf0f5;
+}
+
+.enlace{
+    position: absolute;
+    margin: 1rem 5rem;
+    
+}
+ 
+
+.logo{
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+     
+    
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+     
+     
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 7px 13px;
+    border: 3px;
+    text-decoration: none;
+    
+}
+
+li a.active, li a:hover{
+    background: #084460;
+    color: white;
+    transition: .5s;
+}
+
+.checkBtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Blog style aditional*/
+.contBlog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;  
+    margin: 0 auto;   
+}
+
+
+.article{
+   
+    background-color: #ccc;
+    border-radius: 1rem;
+    margin: auto 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    height: 25rem;
+
+}
+.article a img{
+    width: 100%;
+    height: 80%;
+   
+    border-radius: 1rem;
+    margin: 0.5rem 0.5rem;
+    
+}
+.article a{
+    text-decoration: none;
+    width: 5rem;
+}
+.article p{
+     margin:  1rem
+}
+
+.horas-extras-img{
+    margin: auto 0.5rem;
+    width: 80%;
+}
+
+/* Fin Blog style aditional*/
+/*fin menu set up*/
+
+.sbu-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+/*CANVAS*/
+.sueldo-historico{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sueldo-historico img{
+    width: 25rem;
+    height: 20rem;
+}
+
+/*Claster*/
+.articles{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*Footer*/
+ 
+.contact a{
+    color: wheat;
+}

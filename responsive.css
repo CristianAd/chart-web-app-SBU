@@ -1,0 +1,129 @@
+
+
+/* Estilo para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    .checkBtn{
+        display: block;
+    }
+    .grid-container header nav ul{
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #222;
+        top: 80px;
+        left: -110%;
+        text-align: center;
+        transition: all 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .grid-container header nav ul li{
+        display: block;
+        margin: 5px 0;
+        line-height: 30px;
+    }
+    .grid-container header nav ul li a{
+        font-size: 20px;
+    }
+    .grid-container header li a:hover, li a.active{
+        background: #107C69;
+        color: wheat;
+    }
+   
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .grid-container head nav ul {
+      display: none;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .grid-container header nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+    .grid-container header nav ul li a {
+      display: inline-block;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+    .grid-container nav .checkBtn {
+      display: block;
+    }
+    .grid-container nav .logo {
+      max-width: 100%;
+    }
+    canvas{
+        width: 100%;
+    }
+
+    .articles{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+    .articles a img{
+      width: 100%;
+    }
+
+    .impuestos{
+      max-width: 90%;
+    }
+
+
+  }
+  
+  /* Estilo para dispositivos de escritorio */
+  @media only screen and (min-width: 768px) {
+    .grid-container nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+    }
+    .grid-container nav ul li {
+      margin-left: 20px;
+    }
+    .grid-container nav ul li a {
+      font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .grid-container nav .checkBtn {
+      display: none;
+    }
+    .grid-container nav .logo {
+      max-width: 150px;
+    }
+  }
+
+  .sbu-home img {
+    max-width: 100%;
+     
+  }
+  main {
+    margin: auto 1rem;
+  }
+
+
+
+  .sueldo-historico img {
+    max-width: 100%;
+  }
+
+  .articles .article img {
+    max-width: 100%;
+  }
+  
+
